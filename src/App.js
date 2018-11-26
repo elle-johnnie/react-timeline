@@ -7,14 +7,6 @@ import Timeline from './components/Timeline';
 class App extends Component {
   render() {
     console.log(timelineData);
-      const TimelineEventComponents = timelineData["events"].map((event) =>{
-          return <TimelineEvent
-              person={event.person}
-              status={event.status}
-              timeStamp={event.timeStamp}
-              key={event.id}/>
-
-      });
 
     // Customize the code below
     return (
@@ -23,7 +15,7 @@ class App extends Component {
           <h1 className="App-title">Application title</h1>
         </header>
         <main className="App-main">
-            {TimelineEventComponents}
+            <Timeline/>
         </main>
       </div>
     );
