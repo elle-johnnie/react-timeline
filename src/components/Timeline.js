@@ -14,7 +14,7 @@ const Timeline = () => {
 
     });
   return(
-      <section>
+      <section className="timeline">
           {tlevents}
       </section>
 
